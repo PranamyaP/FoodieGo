@@ -1,2 +1,38 @@
-# FoodieGo
-Online food delivery platform
+
+
+# 🍴 FoodieGo – Full-Stack Food Delivery Application
+
+FoodieGo is a complete food delivery platform built using the MERN stack (MongoDB, Express, React, Node.js).  
+It includes three main modules:
+
+- 🧑‍💻 **Frontend** – User interface for customers to browse restaurants and place orders.
+- ⚙️ **Backend** – API server for authentication, products, orders, and data management.
+- 🧑‍🍳 **Admin** – Dashboard for managing restaurants, menu items, and orders.
+
+---
+
+## 🗂️ Project Structure
+
+
+---
+
+## ⚙️ Prerequisites
+
+Before running the project, make sure you have installed:
+
+- [Node.js](https://nodejs.org/) (v16 or later)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [MongoDB](https://www.mongodb.com/try/download/community) (Local or Atlas cloud)
+
+---
+
+## 🚀 Step-by-Step Setup Guide
+
+### 1️⃣ Clone the Repository
+
+Open your terminal or command prompt and run:
+
+```bash
+git clone https://github.com/PranamyaP/FoodieGo.git
+cd FoodieGo
+
