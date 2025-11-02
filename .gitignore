@@ -56,8 +56,7 @@ desktop.ini
 # ==========================================================
 backend/logs/
 backend/tmp/
-backend/.env
-backend/config/db.js
+
 
 # ==========================================================
 # Frontend specific ignores
