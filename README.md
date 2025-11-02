@@ -1,6 +1,4 @@
-Got it. Here is the updated `README.md` file, now including the **Admin Panel Setup** instructions and an updated folder structure.
 
------
 
 # FoodieGo
 
