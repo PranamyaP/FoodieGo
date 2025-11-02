@@ -1,9 +1,5 @@
 
 
-# FoodieGo
-
-Online food delivery platform
-
 # 🍴 FoodieGo – Full Stack Food Delivery Application
 
 This is a **MERN Stack (MongoDB, Express.js, React.js, Node.js)** based food delivery web application.
