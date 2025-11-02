@@ -1,1 +1,117 @@
+# FoodieGo
 
+Online food delivery platform
+
+# 🍴 FoodieGo – Full Stack Food Delivery Application
+
+This is a **MERN Stack (MongoDB, Express.js, React.js, Node.js)** based food delivery web application.
+It includes features for both **Frontend (Customer)** and **Backend (Admin/Server)** operations.
+
+-----
+
+## 🚀 Features
+
+  - User Authentication & Authorization
+  - Add/View Food Items
+  - Place and Manage Orders
+  - Online Payment using **Stripe**
+  - Admin Dashboard for managing menu & orders
+  - MongoDB Atlas for Cloud Database
+
+-----
+
+## 🧩 Folder Structure
+
+```
+food/
+│
+├── frontend/ # React + Vite frontend
+├── backend/ # Node.js + Express.js server
+│   ├── config/
+│   │   └── db.js # MongoDB connection file
+│   ├── .env # Environment variables (Stripe key, etc.)
+│
+└── README.md
+```
+
+-----
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/your-repo.git
+cd food
+```
+
+### 2️⃣ Backend Setup
+
+Go to `backend` folder:
+
+```bash
+cd backend
+```
+
+Install required packages:
+
+```bash
+npm install
+```
+
+Create and configure MongoDB connection:
+
+  * Open file: `backend/config/db.js`
+  * Replace the MongoDB link with your own from MongoDB Atlas
+
+<!-- end list -->
+
+```javascript
+import mongoose from "mongoose";
+
+export const connectDB = async () => {
+  await mongoose.connect('mongodb+srv://your_mongodb_link')
+    .then(() => console.log("DB Connected"));
+}
+```
+
+4.  Create a `.env` file inside `backend/` folder and add your Stripe Secret Key:
+
+<!-- end list -->
+
+```
+STRIPE_SECRET_KEY=your_stripe_key
+```
+
+🔹 Get your Stripe key from `https://dashboard.stripe.com/apikeys`
+
+Start the backend server:
+
+```bash
+npm run server
+```
+
+The backend should now run on your configured port (e.g., `http://localhost:4000`).
+
+### 3️⃣ Frontend Setup
+
+Go to `frontend` folder:
+
+```bash
+cd ../frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+npm install react-router-dom
+```
+
+Run the frontend (Vite + React):
+
+```bash
+npm run dev
+```
+
+Open the displayed local URL (e.g. `http://localhost:5173`) in your browser.
