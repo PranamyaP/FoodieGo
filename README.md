@@ -1,3 +1,7 @@
+Got it. Here is the updated `README.md` file, now including the **Admin Panel Setup** instructions and an updated folder structure.
+
+-----
+
 # FoodieGo
 
 Online food delivery platform
@@ -25,11 +29,13 @@ It includes features for both **Frontend (Customer)** and **Backend (Admin/Serve
 ```
 food/
 │
-├── frontend/ # React + Vite frontend
-├── backend/ # Node.js + Express.js server
+├── frontend/ # React + Vite customer frontend
+├── backend/  # Node.js + Express.js server
 │   ├── config/
 │   │   └── db.js # MongoDB connection file
 │   ├── .env # Environment variables (Stripe key, etc.)
+│
+├── admin/    # React + Vite admin panel
 │
 └── README.md
 ```
@@ -93,13 +99,15 @@ npm run server
 
 The backend should now run on your configured port (e.g., `http://localhost:4000`).
 
-### 3️⃣ Frontend Setup
+### 3️⃣ Frontend Setup (Customer)
 
-Go to `frontend` folder:
+Go to `frontend` folder (from root `food/` directory):
 
 ```bash
-cd ../frontend
+cd frontend 
 ```
+
+*(If you are in the `backend` folder, use `cd ../frontend`)*
 
 Install dependencies:
 
@@ -115,3 +123,27 @@ npm run dev
 ```
 
 Open the displayed local URL (e.g. `http://localhost:5173`) in your browser.
+
+### 4️⃣ Admin Panel Setup
+
+Go to `admin` folder (from root `food/` directory):
+
+```bash
+cd admin
+```
+
+*(If you are in another folder like `frontend`, use `cd ../admin`)*
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the admin panel:
+
+```bash
+npm run dev
+```
+
+This will likely run the admin dashboard on a different port.
